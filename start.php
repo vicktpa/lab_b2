@@ -11,11 +11,11 @@ if( isset( $_GET['Submit'] ) ) {
 		$html .= '<pre>User ID exists in the database.</pre>';
 	}
 	else {
-		header( $_SERVER\[ 'SERVER_PROTOCOL' \] . ' 404 Not Found' );
+		header( $_SERVER[ 'SERVER_PROTOCOL'] . ' 404 Not Found' );
 
 		$html .= '<pre>User ID is MISSING from the database.</pre>';
 	}
 	
-	((is_null($___mysqli_res = mysqli_close($GLOBALS\["___mysqli_ston"\]))) ? false : $___mysqli_res);
+	((is_null($___mysqli_res = mysqli_close($GLOBALS["___mysqli_ston"]))) ? false : $___mysqli_res);
 }
 ?>
